@@ -8,6 +8,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: 'Auto-assign issue'
-        uses: edwinRNDR/pick-me@v0.1
+        uses: edwinRNDR/pick-me@v0.2
         with:
           repo-token: ${{ secrets.GITHUB_TOKEN }}
