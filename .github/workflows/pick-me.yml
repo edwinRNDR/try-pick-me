@@ -1,0 +1,13 @@
+name: Issue assignment
+
+on:
+  issue_comment:
+    types: [created, edited]
+jobs:
+  auto-assign:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 'Auto-assign issue'
+        uses: edwinRNDR/pick-me@latest
+        with:
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
